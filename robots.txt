@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /enquiry.html
+Disallow: /contact.html
+
+Allow: /

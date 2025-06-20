@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - SARCS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>South African Red Cross Society</h1>
+        <img src="https://i0.wp.com/redcross.org.za/wp-content/uploads/2020/06/HEADER-LOGO-ONLY.png?fit=3726%2C998&ssl=1" 
+             alt="SARCS Header Logo" 
+             style="max-width: 60%; height: auto;">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="enquiry.html" class="active">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Request Our Services</h2>
+            <form id="enquiryForm" action="/submit_enquiry" method="POST">
+                <label>Name:</label><input type="text" name="name" required minlength="2" />
+                <label>Email:</label><input type="email" name="email" required />
+                <label>Phone:</label><input type="tel" name="phone" required pattern="[0-9]{10}" />
+                <label>Service:</label>
+                <select name="service" required>
+                    <option value="">Select a service</option>
+                    <option>PHONE CALL & WIFI ACCESS</option>
+                    <option>RED CROSS MESSAGES</option>
+                    <option>TRACING REQUEST</option>
+                    <option>TRACE THE FACE</option>
+                </select>
+                <label>Date:</label><input type="date" name="date" required />
+                <label>Details:</label><textarea name="details" rows="5" maxlength="500"></textarea>
+                <button type="submit">Submit Enquiry</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 South African Red Cross Society. All Rights Reserved Designed By Agency Nest</p>
+    </footer>
+    <script src="dynamic.js"></script>
+</body>
+</html>

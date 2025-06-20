@@ -1,0 +1,1 @@
+// jQuery is necessary for interactive features, ensuring the <script> tag for jQuery is included in your HTML files.

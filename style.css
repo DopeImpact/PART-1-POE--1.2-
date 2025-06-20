@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ADD8E6; /* Light blue background */
+}
+
+header {
+    background-color: #0056b3; /* Dark blue background */
+    color: rgb(59, 118, 207);
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the navigation bar */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+nav a {
+    background-color: #0056b3; /* Box background color */
+    color: white;
+    padding: 15px 20px; /* Increase padding for box effect */
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition effect */
+    display: inline-block; /* Ensure the box shape */
+}
+
+nav a:hover {
+    box-shadow: 0 0 10px 2px rgba(255, 0, 0, 0.7); /* Glow effect on hover */
+}
+
+nav a.active {
+    background-color: #FF4500; /* Highlight color for active page */
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    color: #FF0000; /* Consistent color for h2 headings */
+}
+
+h3 {
+    color: #FF0000; /* Consistent color for h3 headings */
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #0056b3;
+    color: white;
+}
+
+.blink {
+    animation: blink 1s;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* New style for page transition */
+.page-transition {
+    animation: transition-black 1s;
+}
+
+@keyframes transition-black {
+    0% { background-color: black; }
+    100% { background-color: lightblue; } /* Match the body background */
+}
+.container p {
+    color: black; /* Change paragraph text color to black */
+}
